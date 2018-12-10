@@ -4,7 +4,7 @@ import * as actions from "../action";
 import { bindActionCreators } from "redux";
 import { withRouter } from "react-router";
 import banner from '../assets/png/banner.png';
-import clubLogo from '../assets/png/clubLogo.png';
+import clubLogo from '../assets/png/icon1.png';
 import ThumbsUp from '../assets/svg/thumbsup.svg';
 import Share from '../assets/svg/share.svg';
 import Search from '../assets/png/search.png';
