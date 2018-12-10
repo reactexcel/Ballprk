@@ -1,0 +1,70 @@
+@import 'color.scss';
+
+.sidebar {
+    position: relative;
+    width: 30%;
+    max-width: 300px;
+    box-shadow: -3px 0px 15px 0px $grey;
+    height: calc(100vh - 40px);
+    margin-top: -1px;
+    z-index: 99;
+    .banner {
+        position: relative;
+        width: 100%;
+        img.club {
+            width: 100%;
+        }
+        button {
+            position: absolute;
+            background: $white;
+            color: $grey;
+            bottom: 15px;
+            right: 15px;
+            padding: 5px 15px;
+        }
+        img.clubLogo {
+            position: absolute;
+            width: 20%;
+            left: 10%;
+            bottom: 0;
+            transform: translateY(40%);
+        }
+    }
+    .description {
+        margin-top: 10vh;
+        text-align: center;
+        color: $text-grey;
+        .club-name {
+            font-size: 16px;
+            display: block;
+            margin: 0 auto;
+            line-height: 10px;
+            font-weight: 700;
+            + small {
+                font-size: 11px;
+            }
+        }
+        .stats {
+            display: block;
+            width: 70%;
+            margin: 4vh auto;
+            .posts, .followers, .following {
+                width: 30%;
+                margin: 1.5%;
+                display: inline-block;
+                span {
+                    display: block;
+                    font-weight: 700;
+                }
+            }
+        }
+        button.message {
+            display: block;
+            width: 70%;
+            background: $brown-grey;
+            margin: 0 auto;
+            padding: 10px;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@import 'color.scss';
+
+.navbar {
+    position: relative;
+    background: $black;
+    z-index: 999;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        .navbar-brand {
+            color: $white;
+            font-weight: 300;
+            font-size: 12px;
+            display: inline-block;
+            padding: 2px 10px;
+            margin: 10px 0;
+            border: 1px solid $white;
+            letter-spacing: 5px;
+        }
+        .navbar-collapse {
+            display: inline-flex;
+            align-items: center;
+            .search {
+                height: 20px;
+                width: auto;
+                margin-right: 5px;
+            }
+            .navbar-nav {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    display: inline-block;
+                    color: $white;
+                    font-weight: 300;
+                    margin-right: 1vw;
+                    margin-left: 1vw;
+                    &:nth-child(2) {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .pipe {
+            color: $white;
+            font-size: 26px;
+            margin-top: -3px;
+        }
+        .barcode, .inbox, .bell {
+            height: 20px;
+            width: auto;
+            margin-right: 1vw;
+            margin-left: 1vw;
+        }
+        .dropdown-toggle {
+            border: 1px solid $white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;    
+            margin-left: 1vw;
+            .user {
+                height: 70%;
+                width: auto;
+                margin: 3px -3px;
+            }
+        }
+    }
+}

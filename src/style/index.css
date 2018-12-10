@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700");
+body {
+  margin: 0;
+  font-family: 'Jura';
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body button {
+  background: transparent;
+  outline: none;
+  border: none;
+}

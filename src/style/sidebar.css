@@ -1,0 +1,79 @@
+.sidebar {
+  position: relative;
+  width: 30%;
+  max-width: 300px;
+  box-shadow: -3px 0px 15px 0px grey;
+  height: calc(100vh - 40px);
+  margin-top: -1px;
+  z-index: 99;
+}
+
+.sidebar .banner {
+  position: relative;
+  width: 100%;
+}
+
+.sidebar .banner img.club {
+  width: 100%;
+}
+
+.sidebar .banner button {
+  position: absolute;
+  background: #fff;
+  color: grey;
+  bottom: 15px;
+  right: 15px;
+  padding: 5px 15px;
+}
+
+.sidebar .banner img.clubLogo {
+  position: absolute;
+  width: 20%;
+  left: 10%;
+  bottom: 0;
+  transform: translateY(40%);
+}
+
+.sidebar .description {
+  margin-top: 10vh;
+  text-align: center;
+  color: #6c6c6c;
+}
+
+.sidebar .description .club-name {
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  line-height: 10px;
+  font-weight: 700;
+}
+
+.sidebar .description .club-name + small {
+  font-size: 11px;
+}
+
+.sidebar .description .stats {
+  display: block;
+  width: 70%;
+  margin: 4vh auto;
+}
+
+.sidebar .description .stats .posts, .sidebar .description .stats .followers, .sidebar .description .stats .following {
+  width: 30%;
+  margin: 1.5%;
+  display: inline-block;
+}
+
+.sidebar .description .stats .posts span, .sidebar .description .stats .followers span, .sidebar .description .stats .following span {
+  display: block;
+  font-weight: 700;
+}
+
+.sidebar .description button.message {
+  display: block;
+  width: 70%;
+  background: #3b3434;
+  margin: 0 auto;
+  padding: 10px;
+  color: #fff;
+}
