@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  margin: 10px 0 0;
+  box-shadow: 0px 3px 5px -5px grey;
+}
+
+.menu li {
+  padding: 10px 0;
+  margin: 0 20px;
+  display: inline-block;
+  color: #3b3434;
+}
+
+.menu li.active {
+  font-weight: 700;
+  border-bottom: 3px solid #3b3434;
+}

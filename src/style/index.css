@@ -2,6 +2,27 @@
 body {
   margin: 0;
   font-family: 'Jura';
+  overflow: hidden;
+}
+
+body #root {
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+body .body {
+  position: absolute;
+  left: 30vw;
+  display: inline-block;
+  width: calc(100vw - 300px);
+  height: calc(100vh - 41px);
+  overflow-y: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  body .body {
+    left: 300px;
+  }
 }
 
 body a {

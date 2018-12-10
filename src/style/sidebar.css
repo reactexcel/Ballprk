@@ -1,11 +1,19 @@
 .sidebar {
-  position: relative;
-  width: 30%;
-  max-width: 300px;
+  position: absolute;
+  display: inline-block;
+  width: 30vw;
+  overflow-y: hidden;
+  background-color: #fff;
   box-shadow: -3px 0px 15px 0px grey;
   height: calc(100vh - 40px);
   margin-top: -1px;
   z-index: 99;
+}
+
+@media screen and (min-width: 1000px) {
+  .sidebar {
+    max-width: 300px;
+  }
 }
 
 .sidebar .banner {
@@ -23,7 +31,7 @@
   color: grey;
   bottom: 15px;
   right: 15px;
-  padding: 5px 15px;
+  padding: .4vh 1vw;
 }
 
 .sidebar .banner img.clubLogo {
@@ -35,7 +43,11 @@
 }
 
 .sidebar .description {
-  margin-top: 10vh;
+  display: block;
+  width: 70%;
+  margin-top: 7vh;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   color: #6c6c6c;
 }
@@ -54,8 +66,8 @@
 
 .sidebar .description .stats {
   display: block;
-  width: 70%;
-  margin: 4vh auto;
+  width: 100%;
+  margin: 3vh auto 2vh;
 }
 
 .sidebar .description .stats .posts, .sidebar .description .stats .followers, .sidebar .description .stats .following {
@@ -70,10 +82,37 @@
 }
 
 .sidebar .description button.message {
-  display: block;
-  width: 70%;
+  width: 100%;
   background: #3b3434;
-  margin: 0 auto;
   padding: 10px;
   color: #fff;
+}
+
+.sidebar .description a {
+  font-size: 12px;
+  display: block;
+  margin-top: 4vh;
+  color: #1a78bb;
+  text-align: left;
+}
+
+.sidebar .description div.about {
+  margin: 1vh 0;
+  text-align: left;
+  display: block;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.sidebar .partners {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+.sidebar .partners img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 1%;
 }

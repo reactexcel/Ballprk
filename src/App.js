@@ -9,7 +9,7 @@ class App extends Component {
       <React.Fragment>
         <Header />
         <Sidebar />
-        <div className='container-fluid'>
+        <div className='body'>
           {this.props.children}
         </div>
       </React.Fragment>

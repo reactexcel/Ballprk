@@ -1,8 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Jura:300,400,500,600,700');
+@import 'color.scss';
 
 body {
     margin: 0;
     font-family: 'Jura';
+    overflow: hidden;
+
+    #root {
+        overflow: hidden;
+        background-color: $lightgrey;
+    }
+    .body {
+        position: absolute;
+        left: 30vw;        
+        display: inline-block;
+        width: calc(100vw - 300px);
+        height: calc(100vh - 41px);
+        overflow-y: auto;
+        @media screen and (min-width: 1000px) {
+            left: 300px;
+        }
+    }
     a {
         text-decoration: none;
         color: inherit;
