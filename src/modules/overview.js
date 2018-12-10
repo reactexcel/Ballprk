@@ -51,8 +51,8 @@ class OverView extends Component {
         <div className='wrapper'>
           <div className='recommend-share-mention'>
             <button className='recommend'> <img src={ThumbsUp} /> Recommend</button>                
-            <button className='mention'> <img src={Share} /> Mention</button>
-            <button className='share'> <b>@</b> Share</button>
+            <button className='share'> <img src={Share} />Share</button>
+            <button className='mention'> <b>@</b>  Mention</button>
           </div>
           <div className='search'>
             <img src={Search} />
