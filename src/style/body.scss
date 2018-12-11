@@ -58,6 +58,9 @@
             position: relative;
             margin-bottom: 20px;
             padding-bottom: 10px;
+            @media screen and (max-width: 800px) {
+                width: 49%;
+            }
             div.banner {
                 position: relative;
                 img {
